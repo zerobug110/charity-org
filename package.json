@@ -1,0 +1,21 @@
+{
+  "name": "charity-org",
+  "version": "1.0.0",
+  "description": "Charity organization website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style/main.css -w"
+  },
+  "keywords": [
+    "Charity",
+    "donation",
+    "africa",
+    "fund"
+  ],
+  "author": "Basiru M. Ceesay",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "react": "^17.0.1"
+  }
+}

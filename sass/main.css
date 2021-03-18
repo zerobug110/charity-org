@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  width: 100%;
+  height: 450px;
+  background-color: green;
+}
+/*# sourceMappingURL=main.css.map */

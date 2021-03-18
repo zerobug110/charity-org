@@ -1,0 +1,6 @@
+.location {
+    display: grid;
+    grid-template-columns: col-start 1 / col-end;
+    
+    background-color: brown;
+}

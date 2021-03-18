@@ -1,0 +1,31 @@
+*, 
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // default font-size 16px / 10px which is 1 rem = 52.6%
+    
+}
+
+body {
+    font-family: sans-serif;
+    background-color: $secondary-color;
+    line-height: 1.6;
+}
+
+    a::before,
+    a::after,
+    a::visited {
+        text-decoration: none;
+    }
+
+.container {
+    display: grid;
+    grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem[full-end];
+    grid-template-rows: 100vh repeat(7, min-content);
+}
