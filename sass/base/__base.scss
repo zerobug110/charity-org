@@ -9,6 +9,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // default font-size 16px / 10px which is 1 rem = 52.6%
+    scroll-behavior: smooth;
     
 }
 
@@ -45,6 +46,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: $secondary-color;
     line-height: 1.6;
+
 }
 
     a::before,

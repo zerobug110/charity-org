@@ -10,17 +10,16 @@
      <title>Document</title>
 </head>
 <body class="container">
-     <header class="header">
+     <header class="header" id="header">
           <nav class="header__nav">
                <div class="header__nav--logo">
                     <img src="images/logo.jpg" alt="logo image" class="header__nav--img">
                </div>
                <ul class="header__nav--items">
-                    <li class="header__nav--list"><a href="">home</a></li>
-                    <li class="header__nav--list"><a href="">about</a></li>
-                    <li class="header__nav--list"><a href="">fAQ</a></li>
-                    <li class="header__nav--list"><a href="">reviews</a></li>
-                    <li class="header__nav--list"><a href="">contact</a></li>
+                    <li class="header__nav--list"><a href="#header">home</a></li>
+                    <li class="header__nav--list"><a href="#about">about</a></li>
+                    <li class="header__nav--list"><a href="#news">news</a></li>
+                    <li class="header__nav--list"><a href="#contact">contact</a></li>
                </ul>
           </nav>
           <div class="header__heading">
@@ -29,7 +28,7 @@
           </div>
      </header>
 
-     <section class="about">
+     <section class="about" id="about">
           <div class="about__image">
                <img src="images/img-5.jpg" alt="donation image" class="about__image--img">
           </div>
@@ -74,7 +73,7 @@
           </div>
       </section>
 
-      <section class="faq margin-bottom" id="faq">
+      <!-- <section class="faq margin-bottom" id="faq">
           <div class="faq__container">
               <div class="faq__img--box">
                   <img src="images/img-2.jpg" alt="" class="faq__img">
@@ -99,9 +98,9 @@
                   </details>
               </div>
           </div> 
-      </section>
+      </section> -->
 
-     <section class="review margin-bottom">
+     <section class="review margin-bottom" id="news">
         <h2 class="section-heading review__heading">news and stories</h2>
         <div class="review__box">
             <div class="review__caption">
@@ -109,12 +108,11 @@
                     <img src="images/img-4.jpg" alt="img" class="review__caption--img">
                 </div>
                 <div class="review__text">
-                    <h3 class="review__text--heading">Thanks for providng for us</h3>
+                    <h3 class="review__text--heading">Meet Adama's 5 year old orphan </h3>
                     <p class="review__text--paragraph">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat illum repellendus voluptatibus fuga obcaecati distinctio inventore sed? Perspiciatis, facilis a Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus porro debitis soluta repudiandae quasi mollitia perspiciatis distinctio, aspernatur, hic possimus praesentium saepe ducimus suscipit dolorum. Amet animi libero quasi alias pariatur inventore iusto praesentium repellendus consequatur temporibus officia eos, 
+                        This is a unique case. This mother has children of her own however she is not the birth mother to one of them. Mariama has been breastfeeding this 5 year old boy from birth, Adama has never seen his mother as she sadly passed away whilst giving birth. Mariama is his aunty the sister of his Adama's father.
                     </p>
                 </div>
-                        
             </div>
         </div>
         <div class="review__box">
@@ -123,19 +121,21 @@
                     <img src="images/img-1.jpg" alt="img" class="review__caption--img">
                 </div>
                 <div class="review__text">
-                    <h3 class="review__text--heading">Your donation is very much appreciated</h3>
+                    <h3 class="review__text--heading">fatou a widow mother of two and pregnant</h3>
                     <p class="review__text--paragraph">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat illum repellendus voluptatibus fuga obcaecati distinctio inventore sed? Perspiciatis, facilis a Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus porro debitis soluta repudiandae quasi mollitia perspiciatis distinctio, aspernatur, hic possimus praesentium saepe ducimus suscipit dolorum. Amet animi libero quasi alias pariatur inventore iusto praesentium repellendus consequatur temporibus officia eos, 
+                      This is Fatou, she is a mother of two and pregnant with her third child, she is a widow. She hopes to have a small business to help with her daily up keep and to help pay her monthly rent. 
                     </p>
                 </div>          
             </div>
         </div>
      </section>
-     <section class="contact margin-bottom">
-        <form action="" class="form">
-            <input type="text" name="" placeholder="Full name" class="form-input" required>
-            <input type="email" name="" class="form-input" placeholder="Email" required>
-            <textarea name="" id="" cols="30" rows="10" class="form__textarea"placeholder="Leave a message" required></textarea>
+     <section class="contact margin-bottom" id="contact">
+        <form method="POST" class="form">
+            <input type="text" name="subject" placeholder="Full name" class="form-input" required id="id_subject">
+            <input type="email" name="fromemail" class="form-input" placeholder="Email" required id="id_fromemail">
+            <textarea for="id_message" name="message" cols="30" rows="10" class="form__textarea"placeholder="Leave a message" required id="id_message"></textarea>
+            <!-- {%csrf_token%}
+            {{form}} -->
             <input type="submit" value="send"class="submit">
         </form>
         <div class="contact__info">
