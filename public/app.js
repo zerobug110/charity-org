@@ -2,7 +2,7 @@
 //get the  nav items
 const burger = document.querySelector('.lines');
 const navLinks = document.querySelector('.header__nav--items')
-const open = document.querySelector('.nav-bar__show');
+const open = document.querySelector('.show');
 const links = document.querySelectorAll('.header__nav--list')
 
 // toggle when click
