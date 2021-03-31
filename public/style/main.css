@@ -174,7 +174,7 @@ a::visited {
   grid-column: col-start / col-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-column-gap: 5rem;
+  grid-gap: 5rem;
   margin-bottom: 10rem;
   align-items: center; }
   .about__image {
@@ -186,7 +186,8 @@ a::visited {
       border-radius: .2rem; }
   .about__text {
     font-size: 1.6rem;
-    color: #444; }
+    color: #444;
+    hyphens: auto; }
     @media screen and (max-width: 75rem) {
       .about__text {
         font-size: 2.5em; } }
@@ -199,7 +200,8 @@ a::visited {
     color: #444;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-gap: 5rem; }
+    grid-gap: 5rem;
+    hyphens: auto; }
     @media screen and (max-width: 75rem) {
       .service__container {
         font-size: 2.5em; } }
@@ -215,14 +217,9 @@ a::visited {
       font-weight: 650; }
       @media screen and (max-width: 75rem) {
         .service__content--heading {
-          font-size: 1.2em; } }
-    .service__content--no {
-      color: #f4f5f6;
-      border: 0.1rem solid #fff;
-      display: inline-block;
-      padding: 1rem 2rem;
-      border-radius: 50%;
-      margin-bottom: 2rem; }
+          font-size: 1.2em;
+          font-weight: 300;
+          text-transform: capitalize; } }
 
 .faq {
   grid-column: col-start 1 / col-end; }
@@ -294,7 +291,7 @@ details[open] summary ~ * {
       .review__caption {
         font-size: 2.5em;
         flex-direction: column;
-        padding: 1.5rem 0rem;
+        padding: 1.2rem 0rem;
         grid-column: col-start 1 / col-end; } }
     .review__caption--image {
       width: 20rem;
@@ -319,7 +316,8 @@ details[open] summary ~ * {
       color: #23527c; }
       @media screen and (max-width: 75rem) {
         .review__text--heading {
-          font-size: 1.2em; } }
+          font-size: 1.2em;
+          font-weight: 300; } }
     .review__text--paragraph {
       font-style: italic;
       color: #555;
@@ -364,9 +362,14 @@ details[open] summary ~ * {
     .form-input::placeholder {
       text-transform: capitalize;
       color: #555; }
+      @media screen and (max-width: 75rem) {
+        .form-input::placeholder {
+          font-size: 1.2em;
+          font-family: sans-serif; } }
     @media screen and (max-width: 56.25em) {
       .form-input {
-        font-size: 1.8em; } }
+        font-size: 1.8em;
+        font-family: sans-serif; } }
   .form__textarea {
     font-size: 1.7rem;
     font-family: sans-serif;
@@ -377,8 +380,15 @@ details[open] summary ~ * {
     padding: 1rem;
     border-radius: 0.2rem;
     box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2); }
+    @media screen and (max-width: 75rem) {
+      .form__textarea {
+        font-size: 1.8em; } }
     .form__textarea::placeholder {
       color: #555; }
+      @media screen and (max-width: 75rem) {
+        .form__textarea::placeholder {
+          font-size: 1.2em;
+          font-family: sans-serif; } }
 
 .submit {
   font-size: 1.7rem;
@@ -394,6 +404,9 @@ details[open] summary ~ * {
     color: #444;
     background-color: #F5C439;
     cursor: pointer; }
+  @media screen and (max-width: 75rem) {
+    .submit {
+      font-size: 1.2em; } }
 
 .svg-icon {
   width: 3rem;

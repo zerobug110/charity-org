@@ -35,7 +35,7 @@
         @include respond(tab-port) {
             font-size: 2.5em;
             flex-direction: column;
-            padding: 1.5rem 0rem;
+            padding: 1.2rem 0rem;
             grid-column: col-start 1 / col-end;
         }
 
@@ -72,6 +72,7 @@
             color: $font-color;
             @include respond  (tab-land) {
                 font-size: 1.2em;
+                font-weight: 300;
 
             }
         }

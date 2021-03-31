@@ -56,10 +56,17 @@
 		&::placeholder {
 			text-transform: capitalize;
 			color: #555;
+
+			@include respond  (tab-land) {
+                font-size: 1.2em;
+				font-family: sans-serif;
+
+            }
 		}
 
 		@include respond(tab-port) {
 			font-size: 1.8em;
+			font-family: sans-serif;
 		}
 	}
 
@@ -76,10 +83,25 @@
 		box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1),
 			0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
 
+
+			@include respond  (tab-land) {
+                font-size: 1.8em;
+
+            }
+		
 		&::placeholder {
 			color: #555;
+
+			@include respond  (tab-land) {
+                font-size: 1.2em;
+				font-family: sans-serif;
+
+            }
 		}
-	}
+		
+	}	
+
+
 }
 
 .submit {
@@ -97,6 +119,12 @@
 		color: $dark-font;
 		background-color: #F5C439;
 		cursor: pointer;
+	}
+
+
+	@include respond  (tab-land) {
+		font-size: 1.2em;
+
 	}
 }
 
