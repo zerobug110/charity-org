@@ -16,6 +16,4 @@ run the project locally
 6) npm run dev 
 7) open localhost:5000
 
-or navigate to index.html & run the sass file by typing
-
-npm run:compile:sass
+or install live server and open the index.html with it
