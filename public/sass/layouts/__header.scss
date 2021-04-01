@@ -7,8 +7,8 @@
      background-position: center;
      height: 95vh;
      position: relative;
-     margin-bottom: 10rem;
 	
+     
      &__heading {
           position: absolute;
           top: 50%;
@@ -18,6 +18,10 @@
           font-weight: 300;
           max-width: 100rem;
           text-align: center;
+
+          @include respond(tab-land) {
+               max-width: 200rem;
+          }
 
           
 
