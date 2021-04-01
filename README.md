@@ -2,7 +2,9 @@
 hu mane bantu foundation websitie
  
 1) install nodejs
-2) navigate to the  project folder and run npm run dev to run the server
+2) install sass using the command npm install node-sass
+3) install express useing the command npm install express
+4) navigate to the  project folder and run npm run dev to run the server
 
 IF YOU ARE USING LINUX JUST RUN THE FOLLOWING COMMANDS ON YOUR TERMINAL
 
