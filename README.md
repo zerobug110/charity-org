@@ -15,4 +15,5 @@ run the project locally
 7) open localhost:5000
 
 or run the sass file by typing
+
 npm run:compile:sass
