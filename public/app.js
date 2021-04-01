@@ -1,14 +1,19 @@
-
 //get the  nav items
 const burger = document.querySelector('.lines');
-const navLinks = document.querySelector('.header__nav--items')
-const open = document.querySelector('.show');
-const links = document.querySelectorAll('.header__nav--list')
+const navLinks = document.querySelector('.nav-bar__items')
+const open = document.querySelector('.nav-bar__show');
+const links = document.querySelectorAll('.nav-bar__links')
+const date = document.getElementById('date');
+
+//auto date generate
+date.innerHTML = new Date().getFullYear();
 
 // toggle when click
 burger.addEventListener('click', () => {
-    navLinks.classList.toggle('.show');
+    navLinks.classList.toggle('nav-bar__show');
 });
+
+
 
 
 const contactForm = document.querySelector('.contact');

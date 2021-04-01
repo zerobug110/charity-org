@@ -53,58 +53,6 @@ a::visited {
   height: 95vh;
   position: relative;
   margin-bottom: 10rem; }
-  .header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 0 5rem;
-    height: 6rem; }
-    .header__nav--logo {
-      width: 5rem;
-      height: 5rem; }
-      @media screen and (max-width: 75rem) {
-        .header__nav--logo {
-          display: none; } }
-    .header__nav--img {
-      width: 100%;
-      height: 100%; }
-    .header__nav--items {
-      width: 40rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      @media screen and (max-width: 75rem) {
-        .header__nav--items {
-          font-size: 3em;
-          width: 100%;
-          height: 100vh;
-          background-color: #fff;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-evenly;
-          clip-path: circle(10rem at 90% -19%);
-          overflow: hidden;
-          transition: all .8s;
-          z-index: 2;
-          opacity: 0;
-          pointer-events: 0;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          opacity: 5;
-          z-index: 100;
-          position: absolute; } }
-    .header__nav--list {
-      font-size: 1.6rem;
-      list-style: none; }
-    .header__nav a {
-      text-decoration: none;
-      color: #23527c;
-      text-transform: uppercase; }
-      .header__nav a:hover {
-        color: #816a03; }
   .header__heading {
     position: absolute;
     top: 50%;
@@ -120,7 +68,7 @@ a::visited {
       margin-bottom: 3rem; }
       @media screen and (max-width: 37.5em) {
         .header__heading--main {
-          font-size: 1.8rem;
+          font-size: 1.8em;
           font-weight: 500;
           line-height: 1.2; } }
       @media screen and (min-width: 112.5em) {
@@ -130,18 +78,108 @@ a::visited {
         .header__heading--main {
           font-size: 3rem; } }
 
-.paypal {
-  text-decoration: none;
-  text-transform: capitalize;
-  color: #23527c;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1rem 4rem;
-  background-color: #F5C439;
-  border-radius: 2rem; }
-  .paypal:hover {
-    background-color: #fff;
-    color: #e2ab13; }
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 5rem;
+  height: 6rem; }
+  @media screen and (max-width: 75rem) {
+    .nav-bar {
+      align-items: flex-end;
+      background-color: #f4f5f6;
+      padding: 4rem 5rem; } }
+  .nav-bar__items {
+    width: 40rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (max-width: 75rem) {
+      .nav-bar__items {
+        font-size: 3em;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        clip-path: circle(10rem at 90% -19%);
+        overflow: hidden;
+        transition: all .8s;
+        z-index: 2;
+        opacity: 0;
+        pointer-events: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 5;
+        z-index: 100;
+        position: absolute; } }
+  .nav-bar__show {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 5;
+    z-index: 100;
+    position: absolute;
+    clip-path: circle(183rem at 90% -15%); }
+  .nav-bar__links a {
+    text-decoration: none;
+    color: #444; }
+    .nav-bar__links a:hover {
+      color: #F2B217; }
+  @media screen and (max-width: 75rem) {
+    .nav-bar {
+      align-items: flex-start;
+      margin-top: 0; } }
+
+.text-box {
+  max-width: 50rem;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%); }
+  @media screen and (max-width: 75rem) {
+    .text-box {
+      left: 50%;
+      top: 60%;
+      line-height: 1.5; } }
+  @media screen and (min-width: 112.5em) {
+    .text-box {
+      max-width: 80rem; } }
+
+.main-heading {
+  margin-bottom: 4rem; }
+  @media screen and (max-width: 75rem) {
+    .main-heading {
+      margin-bottom: 2rem; } }
+  @media screen and (max-width: 37.5em) {
+    .main-heading {
+      margin-bottom: 7rem; } }
+
+.one {
+  transform: translateY(3rem); }
+  @media screen and (max-width: 37.5em) {
+    .one {
+      transform: translateY(-2rem); } }
+
+.logo-img-box {
+  width: 5rem;
+  height: 5rem; }
+  @media screen and (max-width: 75rem) {
+    .logo-img-box {
+      width: 3rem;
+      height: 3rem; } }
+
+.logo-img {
+  width: 100%;
+  height: 100%; }
 
 .lines {
   padding-bottom: 1rem;
@@ -160,15 +198,18 @@ a::visited {
   background-color: #444;
   margin-bottom: .3rem; }
 
-.show {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 5;
-  z-index: 100;
-  position: absolute;
-  clip-path: circle(183rem at 90% -15%); }
+.paypal {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #23527c;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 4rem;
+  background-color: #F5C439;
+  border-radius: 2rem; }
+  .paypal:hover {
+    background-color: #fff;
+    color: #e2ab13; }
 
 .about {
   grid-column: col-start / col-end;
@@ -210,6 +251,9 @@ a::visited {
     padding: 2rem;
     border-radius: .2rem;
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
+    @media screen and (max-width: 75rem) {
+      .service__content {
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); } }
     .service__content--heading {
       color: #23527c;
       text-transform: uppercase;

@@ -11,28 +11,28 @@
      <title>Hu-mane bantu foundation</title>
 </head>
 <body class="container">
-     <header class="header" id="header">
-          <nav class="header__nav">
-               <div class="header__nav--logo">
-                    <img src="images/logo.jpg" alt="logo image" class="header__nav--img">
-               </div>
-               <ul class="header__nav--items">
-                    <li class="header__nav--list"><a href="#header">home</a></li>
-                    <li class="header__nav--list"><a href="#about">about</a></li>
-                    <li class="header__nav--list"><a href="#news">news</a></li>
-                    <li class="header__nav--list"><a href="#contact">contact</a></li>
-               </ul>
-               <div class="lines">
+    <header class="header margin-bottom" id="header">
+        <nav class="nav-bar">
+            <div class="logo-img-box">
+                <img src="images/logo.jpg" alt="logo" class="logo-img">
+            </div>
+            <ul class="nav-bar__items">
+                <li class="nav-bar__links"><a href="#header">home</a></li>
+                <li class="nav-bar__links"><a href="#about">about</a></li>
+                <li class="nav-bar__links"><a href="#news">news</a></li>
+                <li class="nav-bar__links"><a href="#contact">contact</a></li>
+            </ul>
+            <div class="lines">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-          </nav>
-          <div class="header__heading">
-               <h1 class="header__heading--main">at Hu-mane Bantu Foundation we work directly with the communities, we strive to empower</h1>
-               <a href="https://www.paypal.com/donate?business=innrad78%40googlemail.com&currency_code=GBP" target="_blank" class="paypal">donate</a>
-          </div>
-     </header>
+        </nav>
+        <div class="header__heading">
+            <h1 class="header__heading--main">at Hu-mane Bantu Foundation we work directly with the communities, we strive to empower</h1>
+            <a href="https://www.paypal.com/donate?business=innrad78%40googlemail.com&currency_code=GBP" target="_blank" class="paypal">donate</a>
+       </div>        
+    </header>
 
      <section class="about" id="about">
           <div class="about__image">
@@ -155,7 +155,7 @@
                 <li class="footer__list"><a href="https://www.paypal.com/donate?business=innrad78%40googlemail.com&currency_code=GBP" class="footer__links">payment plan</a></li>
             </ul>
         </div>
-        <p class="copy-right">&copy; 2021 Hu-mane bantu foundation All rights reserved. </p> 
+        <p class="copy-right">&copy; <span id="date"></span> Hu-mane bantu foundation All rights reserved. </p> 
     </footer>
     <script src="app.js"></script>
 </body>
