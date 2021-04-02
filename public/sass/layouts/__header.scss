@@ -29,6 +29,7 @@
                color: $primary-color;
                text-transform: capitalize;
                margin-bottom: 3rem;
+			   hyphens: auto;
 
 
                @include respond (phone) {

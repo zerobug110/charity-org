@@ -2,7 +2,7 @@
     grid-column: full-start  / full-end;
     background-color: #f3f4f5;
     padding-bottom: 5rem;
-
+    font-size: 1.6rem;
 
    
 
@@ -78,9 +78,8 @@
         }
 
         &--paragraph {
-            font-style: italic;
             color: #555;
-             font-weight: 300;
+            font-weight: 300;
 
              @include respond(tab-land) {
                  font-size: 1.8em;

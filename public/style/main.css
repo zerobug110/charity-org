@@ -73,7 +73,8 @@ a::visited {
     .header__heading--main {
       color: #f4f5f6;
       text-transform: capitalize;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      hyphens: auto; }
       @media screen and (max-width: 37.5em) {
         .header__heading--main {
           font-size: 1.8em;
@@ -238,7 +239,7 @@ a::visited {
     hyphens: auto; }
     @media screen and (max-width: 75rem) {
       .about__text {
-        font-size: 1.6em; } }
+        font-size: 1.3em; } }
 
 .service {
   grid-column: col-start 1 / col-end;
@@ -252,7 +253,7 @@ a::visited {
     hyphens: auto; }
     @media screen and (max-width: 75rem) {
       .service__container {
-        font-size: 2.5em; } }
+        font-size: 1.6em; } }
   .service__content {
     background-color: #fff;
     padding: 2rem;
@@ -272,15 +273,11 @@ a::visited {
           font-weight: 300;
           text-transform: capitalize; } }
 
-.location {
-  display: grid;
-  grid-template-columns: col-start 1 / col-end;
-  background-color: brown; }
-
 .review {
   grid-column: full-start  / full-end;
   background-color: #f3f4f5;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  font-size: 1.6rem; }
   .review__box {
     display: grid;
     grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end];
@@ -328,7 +325,6 @@ a::visited {
           font-size: 2em;
           font-weight: 550; } }
     .review__text--paragraph {
-      font-style: italic;
       color: #555;
       font-weight: 300; }
       @media screen and (max-width: 75rem) {
@@ -394,7 +390,7 @@ a::visited {
   text-align: center; }
   @media screen and (max-width: 75rem) {
     .summary {
-      font-size: 1.5em; } }
+      font-size: 1.6em; } }
   @media screen and (max-width: 75rem) {
     .summary__items {
       text-align: center; } }
