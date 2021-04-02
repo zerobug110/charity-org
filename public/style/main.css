@@ -352,13 +352,13 @@ a::visited {
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 10rem;
   align-items: center;
-  font-size: 1.5rem; }
+  font-size: 1.1rem; }
   .contact__info {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     align-items: center; }
     @media screen and (max-width: 56.25em) {
       .contact__info {
-        font-size: 1.7em;
+        font-size: 1.5em;
         margin: 0 auto; } }
     .contact__info--details {
       display: flex;
