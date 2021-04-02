@@ -30,12 +30,12 @@
         &--heading {
             color: $font-color;
             text-transform: uppercase;
-            font-size: 2rem;
+            font-size: 3rem;
             font-weight: 650;
+            text-align: center;
             
             @include respond  (tab-land) {
-                font-size: 1.7em;
-                font-weight: 300;
+                font-size: 2em;
                 text-transform: capitalize;
 
             }
@@ -43,6 +43,7 @@
         }
         &--info {
             font-size: 1.6rem;
+            text-align: center;
 
             @include respond (tab-land) {
                 font-size: 1.6em;
