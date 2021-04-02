@@ -239,7 +239,8 @@ a::visited {
     hyphens: auto; }
     @media screen and (max-width: 75rem) {
       .about__text {
-        font-size: 1.3em; } }
+        font-size: 1.6em;
+        text-align: center; } }
 
 .service {
   grid-column: col-start 1 / col-end;
@@ -253,7 +254,7 @@ a::visited {
     hyphens: auto; }
     @media screen and (max-width: 75rem) {
       .service__container {
-        font-size: 1.6em; } }
+        font-size: 1.7em; } }
   .service__content {
     background-color: #fff;
     padding: 2rem;
@@ -269,9 +270,14 @@ a::visited {
       font-weight: 650; }
       @media screen and (max-width: 75rem) {
         .service__content--heading {
-          font-size: 1.2em;
+          font-size: 1.7em;
           font-weight: 300;
           text-transform: capitalize; } }
+    .service__content--info {
+      font-size: 1.7rem; }
+      @media screen and (max-width: 75rem) {
+        .service__content--info {
+          font-size: 1.7em; } }
 
 .review {
   grid-column: full-start  / full-end;
