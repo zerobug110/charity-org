@@ -6,6 +6,8 @@
     grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 5rem 1fr;
     padding: 5rem 0;
 
+  
+
 
     &__content {
         grid-column: col-start 1 / col-end;
@@ -20,6 +22,8 @@
 
 		@include respond(tab-port) {
 			font-size: 1.9em;
+            text-align: center;
+            margin: 0 auto;
 		}
     }
 
@@ -43,6 +47,7 @@
 
     &__list {
         list-style: none;
+        text-align: center;
         
     }
 
@@ -50,6 +55,7 @@
         text-decoration: none;
         color: #333;
         text-transform: capitalize;
+        text-align: center;
 
         &:hover {
             color: $dark-font;
