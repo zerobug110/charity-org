@@ -32,7 +32,9 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
-  line-height: 1.6; }
+  line-height: 1.6;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 a::before,
 a::after,
