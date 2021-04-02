@@ -483,6 +483,16 @@ details[open] summary ~ * {
       .terms__text {
         font-size: 1.3em; } }
 
+li {
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem; }
+
+.policy-heading {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #23527c; }
+
 .founder-container {
   grid-column: full-start / full-end;
   background-color: #f3f4f5; }
