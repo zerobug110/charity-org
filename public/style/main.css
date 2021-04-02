@@ -288,12 +288,12 @@ a::visited {
   grid-column: full-start  / full-end;
   background-color: #f3f4f5;
   padding-bottom: 5rem;
-  font-size: 1.6rem;
-  text-align: center; }
+  font-size: 1.6rem; }
   @media screen and (max-width: 75rem) {
     .review {
       font-size: 1.2em;
-      color: #444; } }
+      color: #444;
+      text-align: center; } }
   .review__box {
     display: grid;
     grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end];
@@ -304,7 +304,6 @@ a::visited {
       .review__box {
         grid-template-columns: [full-start] 2rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 2rem [full-end]; } }
   .review__heading {
-    text-align: center;
     margin-top: 3rem;
     text-align: center; }
   .review__caption {
@@ -345,7 +344,8 @@ a::visited {
       @media screen and (max-width: 75rem) {
         .review__text--heading {
           font-size: 1.1em;
-          font-weight: 550; } }
+          font-weight: 550;
+          text-align: center; } }
     .review__text__text--paragraph {
       color: #555;
       font-size: 1.6rem;
