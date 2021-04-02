@@ -5,9 +5,11 @@
     display: grid;
     grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 5rem 1fr;
     padding: 5rem 0;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 
-  
+    @include respond(tab-land) {
+        font-size: 1.2em;
+    }
 
 
     &__content {
@@ -40,16 +42,26 @@
             width: 100%;
             height: 100%;
         }
+
+        @include respond (tab-land) {
+            font-size: 2em;
+        }
     }
 
     &__item {
-
+        font-size: 1.6rem;
+        @include respond(tab-land) {
+            font-size: 1.4em;
+        }
     }
 
     &__list {
         list-style: none;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        @include respond(tab-land) {
+            font-size: .6em;
+        }
     }
 
     &__links {

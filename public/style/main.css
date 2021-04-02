@@ -69,7 +69,7 @@ a::visited {
     text-align: center; }
     @media screen and (max-width: 75rem) {
       .header__heading {
-        width: 70%; } }
+        max-width: 70%; } }
     .header__heading--main {
       color: #f4f5f6;
       text-transform: capitalize;
@@ -288,6 +288,10 @@ a::visited {
   background-color: #f3f4f5;
   padding-bottom: 5rem;
   font-size: 1.6rem; }
+  @media screen and (max-width: 75rem) {
+    .review {
+      font-size: 1.2em;
+      color: #444; } }
   .review__box {
     display: grid;
     grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end];
@@ -352,9 +356,12 @@ a::visited {
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 10rem;
   align-items: center;
-  font-size: 1.1rem; }
+  font-size: 1.6rem; }
+  @media screen and (max-width: 75rem) {
+    .contact {
+      font-size: 1.3rem; } }
   .contact__info {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     align-items: center; }
     @media screen and (max-width: 56.25em) {
       .contact__info {
@@ -388,13 +395,13 @@ a::visited {
   text-align: center; }
   @media screen and (max-width: 75rem) {
     .summary {
-      font-size: 1.6em; } }
+      font-size: 1.2em; } }
   .summary__items {
     font-size: 1.6rem; }
     @media screen and (max-width: 75rem) {
       .summary__items {
         text-align: center;
-        font-size: 1.5em; } }
+        font-size: 1.3em; } }
 
 .terms {
   grid-column: col-start 1 / col-end;
@@ -419,7 +426,8 @@ li {
   grid-column: full-start / full-end;
   background-color: #f3f4f5;
   font-size: 1.5rem;
-  hyphens: auto; }
+  hyphens: auto;
+  color: #444; }
 
 .founder {
   max-width: 100rem;
@@ -440,13 +448,14 @@ li {
     padding: .5rem; }
   .founder__name {
     text-align: center;
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-transform: uppercase; }
   .founder__about {
     font-size: 1.6rem;
     text-align: center;
     margin-bottom: 5rem;
     padding: 3rem;
-    color: #222; }
+    color: #444; }
     @media screen and (max-width: 75rem) {
       .founder__about {
         font-size: 2em; } }
@@ -457,7 +466,10 @@ li {
   display: grid;
   grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 5rem 1fr;
   padding: 5rem 0;
-  font-size: 1.2rem; }
+  font-size: 1.6rem; }
+  @media screen and (max-width: 75rem) {
+    .footer {
+      font-size: 1.2em; } }
   .footer__content {
     grid-column: col-start 1 / col-end;
     display: grid;
@@ -481,10 +493,21 @@ li {
     .footer__quote--img {
       width: 100%;
       height: 100%; }
+    @media screen and (max-width: 75rem) {
+      .footer__quote {
+        font-size: 2em; } }
+  .footer__item {
+    font-size: 1.6rem; }
+    @media screen and (max-width: 75rem) {
+      .footer__item {
+        font-size: 1.4em; } }
   .footer__list {
     list-style: none;
     text-align: center;
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
+    @media screen and (max-width: 75rem) {
+      .footer__list {
+        font-size: .6em; } }
   .footer__links {
     text-decoration: none;
     color: #333;
