@@ -5,7 +5,7 @@
     font-size: 1.6rem;
 
     @include respond (tab-land) {
-        font-size: 1.7em;
+
     }
    
 
@@ -14,7 +14,12 @@
         display: grid;
         grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem[full-end];
         margin: 2rem auto;
-       
+       font-size: 1.6rem;
+       grid-column: col-start 1 / col-end;
+
+       @include respond(tab-land) {
+        grid-template-columns: [full-start]2rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 2rem[full-end];
+       }
 
     }
 
@@ -28,7 +33,7 @@
         padding: 3rem ;
         background-color: #fff;
         box-shadow: 1rem 1.5rem 2rem rgba(0,0,0, .1);
-        grid-column: col-start 2 / col-start 8;
+        grid-column: col-start 1 / col-end;
 
    
 
@@ -36,7 +41,7 @@
         align-items: center;
 
         @include respond(tab-port) {
-            font-size: 1.5em;
+            font-size: 1.7em;
             flex-direction: column;
             padding: 1.2rem 0rem;
             grid-column: col-start 1 / col-end;
@@ -63,7 +68,7 @@
     }
 
     &__text {
-        width: 75%;
+        width: 90%;
         margin-left: 5rem;
 
         @include respond(tab-port) {
@@ -74,18 +79,17 @@
             font-size: 2rem;
             color: $font-color;
             @include respond  (tab-land) {
-                font-size: 1.4em;
+                font-size: 1.1em;
                 font-weight: 550;
 
             }
         }
 
-        &--paragraph {
+        &__text--paragraph{
             color: #555;
-            font-weight: 300;
-
+            font-size: 1.6rem;
              @include respond(tab-land) {
-                 font-size: 1.6em;
+                 font-size: 1.7em;
              }
 
         }

@@ -8,6 +8,7 @@
      
 
      align-items: center;
+     font-size: 1.6rem;
 
      &__image {
           height: 35rem;
@@ -21,16 +22,23 @@
      }
 
      &__text {
-          font-size: 1.6rem;
           color: $dark-font;
           hyphens: auto;
 
           
-     @include respond  (tab-land) {
-          font-size: 1.7em;
+          @include respond  (tab-land) {
           text-align: center;
           
-      }
+          }
+
+          &--paragraph {
+               font-size: 1.6rem;
+
+               @include respond(tab-land) {
+                    font-size: 1.7em;
+               }
+          }
+      
      }
 
 }

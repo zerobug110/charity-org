@@ -225,7 +225,8 @@ a::visited {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 5rem;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.6rem; }
   .about__image {
     height: 35rem;
     box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
@@ -234,13 +235,16 @@ a::visited {
       height: 100%;
       border-radius: .2rem; }
   .about__text {
-    font-size: 1.6rem;
     color: #444;
     hyphens: auto; }
     @media screen and (max-width: 75rem) {
       .about__text {
-        font-size: 1.7em;
         text-align: center; } }
+    .about__text--paragraph {
+      font-size: 1.6rem; }
+      @media screen and (max-width: 75rem) {
+        .about__text--paragraph {
+          font-size: 1.7em; } }
 
 .service {
   grid-column: col-start 1 / col-end;
@@ -274,23 +278,25 @@ a::visited {
           font-weight: 300;
           text-transform: capitalize; } }
     .service__content--info {
-      font-size: 1.7rem; }
+      font-size: 1.6rem; }
       @media screen and (max-width: 75rem) {
         .service__content--info {
-          font-size: 1.7em; } }
+          font-size: 1.6em; } }
 
 .review {
   grid-column: full-start  / full-end;
   background-color: #f3f4f5;
   padding-bottom: 5rem;
   font-size: 1.6rem; }
-  @media screen and (max-width: 75rem) {
-    .review {
-      font-size: 1.7em; } }
   .review__box {
     display: grid;
     grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end];
-    margin: 2rem auto; }
+    margin: 2rem auto;
+    font-size: 1.6rem;
+    grid-column: col-start 1 / col-end; }
+    @media screen and (max-width: 75rem) {
+      .review__box {
+        grid-template-columns: [full-start] 2rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 2rem [full-end]; } }
   .review__heading {
     text-align: center;
     margin-top: 3rem; }
@@ -299,12 +305,12 @@ a::visited {
     padding: 3rem;
     background-color: #fff;
     box-shadow: 1rem 1.5rem 2rem rgba(0, 0, 0, 0.1);
-    grid-column: col-start 2 / col-start 8;
+    grid-column: col-start 1 / col-end;
     display: flex;
     align-items: center; }
     @media screen and (max-width: 56.25em) {
       .review__caption {
-        font-size: 1.5em;
+        font-size: 1.7em;
         flex-direction: column;
         padding: 1.2rem 0rem;
         grid-column: col-start 1 / col-end; } }
@@ -321,7 +327,7 @@ a::visited {
       height: 100%;
       border-radius: 50%; }
   .review__text {
-    width: 75%;
+    width: 90%;
     margin-left: 5rem; }
     @media screen and (max-width: 56.25em) {
       .review__text {
@@ -331,14 +337,14 @@ a::visited {
       color: #23527c; }
       @media screen and (max-width: 75rem) {
         .review__text--heading {
-          font-size: 1.4em;
+          font-size: 1.1em;
           font-weight: 550; } }
-    .review__text--paragraph {
+    .review__text__text--paragraph {
       color: #555;
-      font-weight: 300; }
+      font-size: 1.6rem; }
       @media screen and (max-width: 75rem) {
-        .review__text--paragraph {
-          font-size: 1.6em; } }
+        .review__text__text--paragraph {
+          font-size: 1.7em; } }
 
 .contact {
   grid-column: col-start 1 / col-end;
@@ -369,24 +375,6 @@ a::visited {
       color: #555;
       text-align: center; }
 
-.submit {
-  font-size: 1.7rem;
-  color: #fff;
-  background-color: #444;
-  outline: none;
-  border: none;
-  width: 10rem;
-  margin: 0 auto;
-  border-radius: 2rem;
-  padding: 1rem 2rem; }
-  .submit:hover {
-    color: #444;
-    background-color: #F5C439;
-    cursor: pointer; }
-  @media screen and (max-width: 75rem) {
-    .submit {
-      font-size: 1.5em; } }
-
 .svg-icon {
   width: 2.5rem;
   height: 2.5rem; }
@@ -400,9 +388,12 @@ a::visited {
   @media screen and (max-width: 75rem) {
     .summary {
       font-size: 1.6em; } }
-  @media screen and (max-width: 75rem) {
-    .summary__items {
-      text-align: center; } }
+  .summary__items {
+    font-size: 1.6rem; }
+    @media screen and (max-width: 75rem) {
+      .summary__items {
+        text-align: center;
+        font-size: 1.7em; } }
 
 .terms {
   grid-column: col-start 1 / col-end;
@@ -455,7 +446,7 @@ li {
     color: #222; }
     @media screen and (max-width: 75rem) {
       .founder__about {
-        font-size: 1.6em; } }
+        font-size: 1.7em; } }
 
 .footer {
   background-color: #fff;
