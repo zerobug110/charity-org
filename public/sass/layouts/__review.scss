@@ -4,6 +4,9 @@
     padding-bottom: 5rem;
     font-size: 1.6rem;
 
+    @include respond (tab-land) {
+        font-size: 1.7em;
+    }
    
 
 
@@ -71,7 +74,7 @@
             font-size: 2rem;
             color: $font-color;
             @include respond  (tab-land) {
-                font-size: 2em;
+                font-size: 1.4em;
                 font-weight: 550;
 
             }
@@ -82,7 +85,7 @@
             font-weight: 300;
 
              @include respond(tab-land) {
-                 font-size: 1.8em;
+                 font-size: 1.6em;
              }
 
         }

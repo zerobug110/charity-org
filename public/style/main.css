@@ -239,7 +239,7 @@ a::visited {
     hyphens: auto; }
     @media screen and (max-width: 75rem) {
       .about__text {
-        font-size: 1.6em;
+        font-size: 1.7em;
         text-align: center; } }
 
 .service {
@@ -284,6 +284,9 @@ a::visited {
   background-color: #f3f4f5;
   padding-bottom: 5rem;
   font-size: 1.6rem; }
+  @media screen and (max-width: 75rem) {
+    .review {
+      font-size: 1.7em; } }
   .review__box {
     display: grid;
     grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end];
@@ -328,14 +331,14 @@ a::visited {
       color: #23527c; }
       @media screen and (max-width: 75rem) {
         .review__text--heading {
-          font-size: 2em;
+          font-size: 1.4em;
           font-weight: 550; } }
     .review__text--paragraph {
       color: #555;
       font-weight: 300; }
       @media screen and (max-width: 75rem) {
         .review__text--paragraph {
-          font-size: 1.8em; } }
+          font-size: 1.6em; } }
 
 .contact {
   grid-column: col-start 1 / col-end;
@@ -408,7 +411,7 @@ a::visited {
     font-size: 1.6rem; }
     @media screen and (max-width: 75rem) {
       .terms__text {
-        font-size: 1.3em; } }
+        font-size: 1.7em; } }
 
 li {
   font-size: 1.6rem;
