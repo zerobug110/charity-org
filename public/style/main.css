@@ -388,7 +388,9 @@ details[open] summary ~ * {
           margin-bottom: 2rem; } }
     .contact__info--text {
       transform: translateX(3rem);
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #555; }
 
 .form {
   display: flex;
