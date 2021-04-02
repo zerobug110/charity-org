@@ -71,8 +71,8 @@
             font-size: 2rem;
             color: $font-color;
             @include respond  (tab-land) {
-                font-size: 1.2em;
-                font-weight: 300;
+                font-size: 2em;
+                font-weight: 550;
 
             }
         }
@@ -83,7 +83,7 @@
              font-weight: 300;
 
              @include respond(tab-land) {
-                 font-size: 1.1em;
+                 font-size: 1.8em;
              }
 
         }

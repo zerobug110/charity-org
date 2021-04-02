@@ -43,6 +43,7 @@
         text-align: center;
         margin-bottom: 5rem;
         padding: 3rem;
+        color: #222;
 
         @include respond (tab-land) {
             font-size: 1.6em;
