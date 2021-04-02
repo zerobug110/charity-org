@@ -41,7 +41,7 @@
         align-items: center;
 
         @include respond(tab-port) {
-            font-size: 1.7em;
+            font-size: 1.5em;
             flex-direction: column;
             padding: 1.2rem 0rem;
             grid-column: col-start 1 / col-end;
@@ -89,7 +89,7 @@
             color: #555;
             font-size: 1.6rem;
              @include respond(tab-land) {
-                 font-size: 1.7em;
+                 font-size: 1.5em;
              }
 
         }

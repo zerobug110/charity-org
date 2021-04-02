@@ -69,7 +69,7 @@ a::visited {
     text-align: center; }
     @media screen and (max-width: 75rem) {
       .header__heading {
-        max-width: 200rem; } }
+        width: 70%; } }
     .header__heading--main {
       color: #f4f5f6;
       text-transform: capitalize;
@@ -77,7 +77,7 @@ a::visited {
       hyphens: auto; }
       @media screen and (max-width: 37.5em) {
         .header__heading--main {
-          font-size: 1.8em;
+          font-size: 1.4em;
           font-weight: 500;
           line-height: 1.2; } }
       @media screen and (min-width: 112.5em) {
@@ -85,7 +85,7 @@ a::visited {
           font-size: 8rem; } }
       @media screen and (max-width: 75rem) {
         .header__heading--main {
-          font-size: 3rem; } }
+          font-size: 2.5rem; } }
 
 .nav-bar {
   display: flex;
@@ -244,7 +244,7 @@ a::visited {
       font-size: 1.6rem; }
       @media screen and (max-width: 75rem) {
         .about__text--paragraph {
-          font-size: 1.7em; } }
+          font-size: 1.5em; } }
 
 .service {
   grid-column: col-start 1 / col-end;
@@ -310,7 +310,7 @@ a::visited {
     align-items: center; }
     @media screen and (max-width: 56.25em) {
       .review__caption {
-        font-size: 1.7em;
+        font-size: 1.5em;
         flex-direction: column;
         padding: 1.2rem 0rem;
         grid-column: col-start 1 / col-end; } }
@@ -344,20 +344,21 @@ a::visited {
       font-size: 1.6rem; }
       @media screen and (max-width: 75rem) {
         .review__text__text--paragraph {
-          font-size: 1.7em; } }
+          font-size: 1.5em; } }
 
 .contact {
   grid-column: col-start 1 / col-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 10rem;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.5rem; }
   .contact__info {
     font-size: 1.6rem;
     align-items: center; }
     @media screen and (max-width: 56.25em) {
       .contact__info {
-        font-size: 1.9em;
+        font-size: 1.7em;
         margin: 0 auto; } }
     .contact__info--details {
       display: flex;
@@ -393,7 +394,7 @@ a::visited {
     @media screen and (max-width: 75rem) {
       .summary__items {
         text-align: center;
-        font-size: 1.7em; } }
+        font-size: 1.5em; } }
 
 .terms {
   grid-column: col-start 1 / col-end;
@@ -416,7 +417,9 @@ li {
 
 .founder-container {
   grid-column: full-start / full-end;
-  background-color: #f3f4f5; }
+  background-color: #f3f4f5;
+  font-size: 1.5rem;
+  hyphens: auto; }
 
 .founder {
   max-width: 100rem;
@@ -446,14 +449,15 @@ li {
     color: #222; }
     @media screen and (max-width: 75rem) {
       .founder__about {
-        font-size: 1.7em; } }
+        font-size: 2em; } }
 
 .footer {
   background-color: #fff;
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 5rem 1fr;
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  font-size: 1.2rem; }
   .footer__content {
     grid-column: col-start 1 / col-end;
     display: grid;
@@ -479,7 +483,8 @@ li {
       height: 100%; }
   .footer__list {
     list-style: none;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.5rem; }
   .footer__links {
     text-decoration: none;
     color: #333;
