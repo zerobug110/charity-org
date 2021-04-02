@@ -1,0 +1,11 @@
+.terms {
+    grid-column: col-start 1 / col-end;
+    text-align: center;
+
+    &__text {
+        font-size: 1.6rem;
+        @include respond(tab-land) {
+            font-size: 1.3em;
+        }
+    }
+}

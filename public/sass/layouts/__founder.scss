@@ -1,0 +1,46 @@
+
+.founder-container {
+    grid-column: full-start / full-end;
+    background-color:#f3f4f5;
+}
+.founder {
+    max-width: 100rem;
+    margin: 5rem auto;
+
+
+    &__heading {
+        font-size: 2rem;
+        color: $font-color;
+        text-align: center;
+    }    
+
+    &__img--box {
+        width: 15rem;
+        height: 20rem;
+        margin: 0 auto;
+
+
+        margin-bottom: 3rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+
+        outline: .5rem solid $font-color;
+        padding: .5rem;
+
+        
+    }
+
+    &__name {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &__about {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+}
