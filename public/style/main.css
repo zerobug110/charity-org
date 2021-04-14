@@ -187,9 +187,9 @@ a::visited {
   height: 5rem; }
   @media screen and (max-width: 75rem) {
     .logo-img-box {
-      width: 5rem;
-      height: 5rem;
-      transform: translateY(-2rem); } }
+      width: 4rem;
+      height: 4rem;
+      transform: translateY(-1rem); } }
 
 .logo-img {
   width: 100%;
@@ -201,7 +201,7 @@ a::visited {
   display: none;
   z-index: 100;
   position: absolute;
-  right: 5rem; }
+  right: 3rem; }
   @media screen and (max-width: 75rem) {
     .lines {
       display: block; } }
