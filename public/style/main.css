@@ -201,7 +201,7 @@ a::visited {
   display: none;
   z-index: 100;
   position: absolute;
-  right: 5%; }
+  right: 5rem; }
   @media screen and (max-width: 75rem) {
     .lines {
       display: block; } }
