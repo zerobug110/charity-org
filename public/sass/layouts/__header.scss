@@ -184,13 +184,13 @@
 	@include respond(tab-land) {
 		width: 5rem;
 		height: 5rem;	
+		transform: translateY(-2rem);
 	}
 }
 
 .logo-img {
 	width: 100%;
 	height: 100%;
-	transform: translateY(-2rem);
 }
 
 
